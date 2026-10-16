@@ -129,12 +129,13 @@ app.use((error, req, res, next) => {
 // START SERVER
 // ==========================================
 
+
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log("========================================");
-    console.log("🚀 BorrowBack Backend Started");
-    console.log(`🌐 Server: http://localhost:${PORT}`);
-    console.log(`📱 Android: http://10.0.2.2:${PORT}`);
+    console.log("BorrowBack Backend Started");
+    console.log(`Server listening on port ${PORT}`);
     console.log("========================================");
 });
+
